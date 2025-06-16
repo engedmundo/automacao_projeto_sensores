@@ -24,7 +24,7 @@ class Sensor(models.Model):
     department = models.ForeignKey(
         Department,
         on_delete=models.RESTRICT,
-
+        verbose_name="Setor",
     )
     installation_date = models.DateField(
         verbose_name="Data de instalação",
